@@ -28,7 +28,7 @@ make package/wasm3/{clean,compile,install} V=s
 ## Install on device
 
 ```
-scp ./bin/ramips/packages/wasm3/wasm3_*.ipk root@DEVICE:/tmp
+scp ./bin/packages/<your_arch>/wasm3/wasm3_*.ipk root@DEVICE:/tmp
 # Then on device:
 opkg install /tmp/wasm3_*.ipk
 ```
