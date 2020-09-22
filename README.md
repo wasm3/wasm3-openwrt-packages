@@ -4,6 +4,8 @@ wasm3 is the fastest WebAssembly interpreter.
 
 ## Build from source
 
+Before building, please get familiar with [OpenWrt build system](https://openwrt.org/docs/guide-developer/build-system/start) and how to [build OpenWrt packages](https://openwrt.org/docs/guide-developer/build.a.package).
+
 ```bash
 echo "src-git wasm3 git://github.com/wasm3/wasm3-openwrt-packages.git" >> ./feeds.conf
 ./scripts/feeds update -a
