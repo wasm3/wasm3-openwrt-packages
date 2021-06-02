@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=wasm3
-PKG_VERSION:=0.1.0
+PKG_VERSION:=0.5.0
 PKG_RELEASE:=1
 
 PKG_MAINTAINER:=Volodymyr Shymanskyy
@@ -9,12 +9,12 @@ PKG_LICENSE:=MIT
 
 #PKG_SOURCE_URL:=file:///path/to/local/wasm3/
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git://github.com/wasm3/wasm3.git
-PKG_SOURCE_VERSION:=main
+PKG_SOURCE_URL:=https://github.com/wasm3/wasm3/archive/v$(PKG_VERSION).tar.gz
+PKG_HASH:=b778dd72ee2251f4fe9e2666ee3fe1c26f06f517c3ffce572416db067546536c
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_PARALLEL:=1
 
 include $(INCLUDE_DIR)/package.mk
