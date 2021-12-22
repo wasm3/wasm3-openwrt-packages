@@ -2,6 +2,20 @@
 
 wasm3 is the fastest WebAssembly interpreter.
 
+## Using static [prebuilt binaries](https://github.com/wasm3/wasm3-openwrt-packages/releases/latest)
+
+```sh
+$ cd /tmp/
+$ wget -O wasm3 https://github.com/wasm3/wasm3-openwrt-packages/releases/download/v0.5.0/wasm3-linux-mipsel-sf
+$ chmod a+x wasm3
+$ ./wasm3 --version
+Wasm3 v0.5.0 on mipsel mips1
+Build: Dec 22 2021 15:24:31, GCC 11.2.1 20211120
+$ wget -O coremark.wasm https://github.com/wasm3/wasm3/raw/main/test/wasi/coremark/coremark.wasm
+$ ./wasm3 coremark.wasm
+(wait for results)
+```
+
 ## Build from source
 
 Before building, please get familiar with [OpenWrt build system](https://openwrt.org/docs/guide-developer/build-system/start) and how to [build OpenWrt packages](https://openwrt.org/docs/guide-developer/build.a.package).
