@@ -4,6 +4,7 @@ wasm3 is the fastest WebAssembly interpreter.
 
 ## Using static [prebuilt binaries](https://github.com/wasm3/wasm3-openwrt-packages/releases/latest)
 
+SSH to your OpenWRT device, then:
 ```sh
 $ cd /tmp/
 $ wget -O wasm3 https://github.com/wasm3/wasm3-openwrt-packages/releases/download/v0.5.0/wasm3-linux-mipsel-sf
