@@ -9,9 +9,8 @@ PKG_LICENSE:=MIT
 
 #PKG_SOURCE_URL:=file:///path/to/local/wasm3/
 
-PKG_SOURCE_URL:=https://github.com/wasm3/wasm3/archive/main.tar.gz
-#PKG_SOURCE_URL:=https://github.com/wasm3/wasm3/archive/v$(PKG_VERSION).tar.gz
-#PKG_HASH:=b778dd72ee2251f4fe9e2666ee3fe1c26f06f517c3ffce572416db067546536c
+PKG_SOURCE_URL:=https://github.com/wasm3/wasm3/archive/v$(PKG_VERSION)/
+PKG_HASH:=b778dd72ee2251f4fe9e2666ee3fe1c26f06f517c3ffce572416db067546536c
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 
